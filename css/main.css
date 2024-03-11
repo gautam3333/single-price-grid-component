@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  max-width: 144rem;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-gray);
+  padding: calc(3vh + 1rem) calc(6vw + 1rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+/***** CARD CONTAINER *****/
+.card {
+  max-width: 70rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px #00000025;
+}
+
+.community {
+  background-color: #fff;
+  padding: calc(4vh + 1rem) calc(3vw + 1rem);
+}
+
+.community h1 {
+  color: var(--cyan);
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.community h2 {
+  color: var(--bright-yellow);
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.community p {
+  color: var(--grayish-blue);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subscription,
+.whyUs {
+  padding: calc(4vh + 1rem) calc(3vw + 1rem);
+}
+
+.subscription {
+  background-color: var(--cyan);
+}
+
+.subscription h3 {
+  color: var(--light-gray);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.price-box h2 {
+  color: var(--light-gray);
+  font-size: 3.2rem;
+}
+
+.price-box p {
+  color: #ccecec;
+}
+
+.subscription p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.subscription-day {
+  color: var(--light-gray);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.subscription a:link,
+.subscription a:visited {
+  display: block;
+  background-color: var(--bright-yellow);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 2px #00000054;
+}
+
+.subscription a:hover,
+.subscription a:active {
+  background-color: #cde55d;
+}
+
+.whyUs {
+  background-color: #55c1bf;
+}
+
+.whyUs h3 {
+  color: var(--light-gray);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.facilities li {
+  color: var(--light-gray);
+  font-size: 1.6rem;
+}
+
+.facilities li:not(:last-child) {
+  margin-bottom: 1rem;
+}
